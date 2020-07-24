@@ -1,4 +1,4 @@
-##storeservice
+# storeservice
 Restful web-services for Grocer and consumer registration
 
 
@@ -7,6 +7,7 @@ Restful web-services for Grocer and consumer registration
 ### Request
 
 `POST` : `/mystore/register/grocer`
+- Grocer registration can be done using  name, list of 5 items up for sale in the store, location
 
     {"name":"walmart","items":["eggs","sugar","cookies","icecream","bread"],"location":"denver"}
 
@@ -26,6 +27,7 @@ Restful web-services for Grocer and consumer registration
 ### Request
 
 `POST` : `mystore/register/consumer`
+- Consumer registration can be done using  name, location
 
     {"name":"walmart","location":"denver"}
 
