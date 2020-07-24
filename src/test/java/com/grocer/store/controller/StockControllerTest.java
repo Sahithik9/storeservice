@@ -52,7 +52,7 @@ public class StockControllerTest {
 		Grocer payload = new Grocer(RandomStringUtils.randomAlphanumeric(8),
 				Arrays.asList("Flour", "Sugar", "cookies", "lays", "muffins"), "Centennial");
 		stockController.registerGrocer(payload);
-		ResponseEntity<List<Grocer>> result = stockController.getGrocerByLocation("denver");
+		ResponseEntity<List<Grocer>> result = stockController.getGrocerByLocation("CCCCC");
 		assertTrue(result.getBody().isEmpty());
 	}
 
